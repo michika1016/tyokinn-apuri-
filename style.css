@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#e8f5e9,#f8fbf5,#eef7ff);
+min-height:100vh;
+padding:40px 20px;
+color:#2f3e34;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+}
+
+header{
+text-align:center;
+margin-bottom:35px;
+}
+
+.logo{
+width:90px;
+height:90px;
+margin:auto;
+border-radius:50%;
+background:linear-gradient(135deg,#9dd9a7,#74c69d);
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:42px;
+box-shadow:0 10px 30px rgba(0,0,0,.12);
+margin-bottom:18px;
+}
+
+header h1{
+font-size:46px;
+font-weight:700;
+color:#3a5a40;
+}
+
+header p{
+margin-top:8px;
+color:#6c757d;
+font-size:18px;
+}
+
+.card{
+background:rgba(255,255,255,.75);
+backdrop-filter:blur(18px);
+border-radius:25px;
+padding:28px;
+margin-bottom:28px;
+box-shadow:0 12px 30px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h2{
+margin-bottom:18px;
+font-size:26px;
+color:#3a5a40;
+}
+
+input{
+width:100%;
+padding:16px;
+border:none;
+border-radius:15px;
+background:#f7f7f7;
+font-size:17px;
+margin-bottom:15px;
+outline:none;
+transition:.3s;
+}
+
+input:focus{
+background:#eef8ef;
+box-shadow:0 0 10px rgba(116,198,157,.3);
+}
+
+button{
+border:none;
+cursor:pointer;
+border-radius:15px;
+transition:.3s;
+font-size:16px;
+font-weight:600;
+}
+
+button:hover{
+transform:translateY(-3px);
+}
+
+#saveGoal{
+width:100%;
+padding:16px;
+background:#74c69d;
+color:white;
+}
+
+#money{
+font-size:48px;
+text-align:center;
+margin:15px 0;
+color:#2d6a4f;
+}
+
+.progress{
+width:100%;
+height:18px;
+background:#e9ecef;
+border-radius:50px;
+overflow:hidden;
+margin:20px 0;
+}
+
+#progressBar{
+height:100%;
+width:0%;
+background:linear-gradient(90deg,#95d5b2,#52b788);
+border-radius:50px;
+transition:.5s;
+}
+
+#percent,
+#remain{
+text-align:center;
+font-size:18px;
+margin-top:10px;
+}
+
+.button-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+}
+
+.addMoney{
+padding:18px;
+background:#d8f3dc;
+}
+
+.addMoney:hover{
+background:#95d5b2;
+color:white;
+}
+
+.custom{
+display:flex;
+gap:15px;
+}
+
+.custom input{
+margin-bottom:0;
+flex:1;
+}
+
+#customAdd{
+width:150px;
+background:#52b788;
+color:white;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+text-align:center;
+}
+
+.stats div{
+background:#f8fff8;
+padding:25px;
+border-radius:18px;
+}
+
+.stats h3{
+margin-bottom:10px;
+color:#3a5a40;
+}
+
+.stats p{
+font-size:28px;
+font-weight:700;
+color:#2d6a4f;
+}
+/* ===========================
+   Memo
+=========================== */
+
+textarea{
+width:100%;
+height:170px;
+padding:18px;
+border:none;
+border-radius:18px;
+background:#f8f8f8;
+resize:none;
+outline:none;
+font-size:16px;
+transition:.3s;
+}
+
+textarea:focus{
+background:#eef8ef;
+box-shadow:0 0 10px rgba(116,198,157,.3);
+}
+
+/* ===========================
+   Achievement
+=========================== */
+
+.achievement{
+text-align:center;
+background:linear-gradient(135deg,#e8f8ec,#ffffff);
+}
+
+.achievement h3{
+font-size:28px;
+color:#2d6a4f;
+margin-top:15px;
+line-height:1.6;
+}
+
+/* ===========================
+   Settings
+=========================== */
+
+.setting-buttons{
+display:flex;
+gap:15px;
+}
+
+.setting-buttons button{
+flex:1;
+padding:16px;
+font-size:16px;
+}
+
+#resetData{
+background:#ffb4a2;
+color:white;
+}
+
+#resetData:hover{
+background:#e76f51;
+}
+
+#darkMode{
+background:#3d405b;
+color:white;
+}
+
+#darkMode:hover{
+background:#22223b;
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+text-align:center;
+margin-top:40px;
+padding:25px 0;
+color:#6c757d;
+font-size:15px;
+}
+
+footer p:first-child{
+font-size:22px;
+font-weight:700;
+color:#3a5a40;
+margin-bottom:8px;
+}
+
+/* ===========================
+   Dark Mode
+=========================== */
+
+body.dark{
+background:linear-gradient(135deg,#1f2937,#253340,#1b262c);
+color:white;
+}
+
+body.dark .card{
+background:rgba(40,45,52,.9);
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3{
+color:#d8f3dc;
+}
+
+body.dark p{
+color:#d9d9d9;
+}
+
+body.dark input,
+body.dark textarea{
+background:#3b424b;
+color:white;
+}
+
+body.dark input::placeholder,
+body.dark textarea::placeholder{
+color:#bbbbbb;
+}
+
+body.dark .stats div{
+background:#3b424b;
+}
+
+body.dark footer p:first-child{
+color:#d8f3dc;
+}
+
+/* ===========================
+   Animation
+=========================== */
+
+.card{
+animation:fadeUp .7s ease;
+}
+
+@keyframes fadeUp{
+
+0%{
+opacity:0;
+transform:translateY(25px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px){
+
+.button-grid{
+grid-template-columns:1fr;
+}
+
+.custom{
+flex-direction:column;
+}
+
+#customAdd{
+width:100%;
+}
+
+.stats{
+grid-template-columns:1fr;
+}
+
+.setting-buttons{
+flex-direction:column;
+}
+
+header h1{
+font-size:36px;
+}
+
+#money{
+font-size:38px;
+}
+
+}
+
+@media(max-width:480px){
+
+body{
+padding:20px 12px;
+}
+
+.card{
+padding:20px;
+}
+
+.logo{
+width:70px;
+height:70px;
+font-size:32px;
+}
+
+header p{
+font-size:15px;
+}
+
+.card h2{
+font-size:22px;
+}
+
+button{
+font-size:15px;
+}
+
+}
