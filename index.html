@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SaveLeaf</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<div class="logo">
+
+🌱
+
+</div>
+
+<h1>SaveLeaf</h1>
+
+<p>Save a little every day.</p>
+
+</header>
+
+<!-- Goal -->
+
+<section class="card">
+
+<h2>
+
+🎯 Goal
+
+</h2>
+
+<input
+type="number"
+id="goalInput"
+placeholder="目標金額を入力">
+
+<button id="saveGoal">
+
+保存
+
+</button>
+
+</section>
+
+<!-- Current -->
+
+<section class="card">
+
+<h2>
+
+💰 Savings
+
+</h2>
+
+<h1 id="money">
+
+¥0
+
+</h1>
+
+<div class="progress">
+
+<div id="progressBar">
+
+</div>
+
+</div>
+
+<p id="percent">
+
+0%
+
+</p>
+
+<p id="remain">
+
+あと ¥0
+
+</p>
+
+</section>
+
+<!-- Quick Add -->
+
+<section class="card">
+
+<h2>
+
+⚡ Quick Add
+
+</h2>
+
+<div class="button-grid">
+
+<button class="addMoney"
+
+data-money="500">
+
+＋¥500
+
+</button>
+
+<button class="addMoney"
+
+data-money="1000">
+
+＋¥1,000
+
+</button>
+
+<button class="addMoney"
+
+data-money="3000">
+
+＋¥3,000
+
+</button>
+
+<button class="addMoney"
+
+data-money="5000">
+
+＋¥5,000
+
+</button>
+
+</div>
+
+</section>
+
+<!-- Custom -->
+
+<section class="card">
+
+<h2>
+
+✍️ Custom Amount
+
+</h2>
+
+<div class="custom">
+
+<input
+
+type="number"
+
+id="customMoney"
+
+placeholder="金額">
+
+<button
+
+id="customAdd">
+
+追加
+
+</button>
+
+</div>
+
+</section>
+
+<!-- Statistics -->
+
+<section class="card stats">
+
+<div>
+
+<h3>
+
+今日
+
+</h3>
+
+<p id="todaySave">
+
+¥0
+
+</p>
+
+</div>
+
+<div>
+
+<h3>
+
+合計
+
+</h3>
+
+<p id="totalSave">
+
+¥0
+
+</p>
+
+</div>
+
+</section>
+<!-- Memo -->
+
+<section class="card">
+
+<h2>
+
+📝 Memo
+
+</h2>
+
+<textarea
+id="memo"
+placeholder="旅行・ライブ・欲しいものなどを書いておこう..."></textarea>
+
+</section>
+
+<!-- Achievement -->
+
+<section
+class="card achievement"
+id="achievementCard">
+
+<h2>
+
+🎉 Achievement
+
+</h2>
+
+<h3 id="achievementText">
+
+目標達成まで頑張ろう！
+
+</h3>
+
+</section>
+
+<!-- Actions -->
+
+<section class="card">
+
+<h2>
+
+⚙️ Settings
+
+</h2>
+
+<div class="setting-buttons">
+
+<button id="resetData">
+
+🔄 リセット
+
+</button>
+
+<button id="darkMode">
+
+🌙 ダークモード
+
+</button>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+🌱 SaveLeaf
+
+</p>
+
+<p>
+
+Save a little every day.
+
+</p>
+
+</footer>
+
+</div>
+
+</body>
+
+</html>
